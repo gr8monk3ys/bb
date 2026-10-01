@@ -130,7 +130,7 @@
     "micromark-util-types": "^2.0.2",
     "oniguruma-to-es": "^4.3.4",
     "remark-parse": "^11.0.0",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.3.0",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-7": "npm:typescript@^7.0.2",
