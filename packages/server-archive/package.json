@@ -19,7 +19,7 @@
     "@bb/config": "workspace:*",
     "@bb/domain": "workspace:*",
     "tar": "7.5.22",
-    "zod": "^4.3.6"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@bb/tsconfig": "workspace:*",

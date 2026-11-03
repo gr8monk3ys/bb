@@ -36,7 +36,7 @@
     "@bb/hono-typed-routes": "workspace:*",
     "@bb/provider-bridge-protocol": "workspace:*",
     "hono": "^4.7.0",
-    "zod": "^4.3.6"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@bb/test-helpers": "workspace:*",

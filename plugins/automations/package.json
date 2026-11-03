@@ -33,7 +33,7 @@
     "@bb/shared-ui": "workspace:*",
     "cron-parser": "^5.5.0",
     "cronstrue": "^3.14.0",
-    "zod": "^4.3.6"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@bb/plugin-build": "workspace:*",
