@@ -52,7 +52,7 @@
     "drizzle-studio:prod": "cross-env NODE_ENV=production pnpm --filter @bb/db db:studio"
   },
   "devDependencies": {
-    "@vitest/coverage-v8": "4.1.1",
+    "@vitest/coverage-v8": "4.1.12",
     "cross-env": "^10.1.0",
     "dotenv-cli": "^11.0.0",
     "esbuild": "^0.28.0",
@@ -64,7 +64,7 @@
     "turbo": "^2.10.12",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "typescript-7": "npm:typescript@^7.0.2",
-    "vitest": "^4.1.1"
+    "vitest": "^4.1.12"
   },
   "packageManager": "pnpm@9.15.0",
   "pnpm": {
@@ -78,8 +78,12 @@
       ]
     },
     "overrides": {
-      "zod": "4.6.5",
-      "@expo/metro-config>lightningcss": "1.30.1"
+      "zod": "4.6.6",
+      "@expo/metro-config>lightningcss": "1.30.1",
+      "monaco-editor>dompurify": "3.4.17",
+      "miniflare>sharp": "0.35.4",
+      "miniflare>undici": "7.30.1",
+      "@earendil-works/pi-coding-agent>undici": "8.12.2"
     },
     "patchedDependencies": {
       "app-builder-lib@26.15.7": "patches/app-builder-lib@26.15.7.patch",
