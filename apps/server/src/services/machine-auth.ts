@@ -3,7 +3,14 @@ import { sql } from "drizzle-orm";
 import { betterAuth } from "better-auth";
 import { apiKey } from "@better-auth/api-key";
 import { drizzleAdapter } from "@better-auth/drizzle-adapter";
-import { authApiKeys, authUsers, type DbConnection } from "@bb/db";
+import {
+  authAccounts,
+  authApiKeys,
+  authSessions,
+  authUsers,
+  authVerifications,
+  type DbConnection,
+} from "@bb/db";
 import { readOrCreateSecretFile } from "@bb/secret-storage";
 import { z } from "zod";
 import type { ServerLogger } from "../types.js";
@@ -18,8 +25,11 @@ const MACHINE_AUTH_SYSTEM_USER_EMAIL = "machine-auth@bb.internal";
 const MACHINE_AUTH_SYSTEM_USER_NAME = "Machine Auth System";
 
 const machineAuthSchema = {
+  account: authAccounts,
   apikey: authApiKeys,
+  session: authSessions,
   user: authUsers,
+  verification: authVerifications,
 };
 
 const currentMachineCredentialMetadataSchema = z
