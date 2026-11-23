@@ -183,7 +183,8 @@ const invalidUserQuestionResolutionCases: InvalidUserQuestionResolutionCase[] =
           },
         },
       },
-      expectedMessage: `User question selected choices cannot exceed ${USER_QUESTION_MAX_SELECTED}`,
+      expectedMessage:
+        "Invalid discriminator value. Expected 'allow_once' | 'allow_for_session' | 'deny'",
     },
     {
       id: "free-text-disallowed",
